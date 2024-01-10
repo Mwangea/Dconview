@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Team from "./pages/Team";
 
 import {Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
                     <Route path="/About" element={<About />} />
                     <Route path="/Services" element={<Services />} />
                     <Route path="/Team" element={<Team />} />
+                    <Route path="/Contact" element={<Contact />} />
+
+
                 </Routes>
                 <Footer />
             </Router>
