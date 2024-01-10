@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 
 import Footer from "./components/Footer";
@@ -9,6 +8,7 @@ import About from "./pages/About";
 import ScrollToTop from "./pages/ScrollToTop";
 import Services from "./pages/Services";
 import Team from "./pages/Team";
+
 import {Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 
@@ -28,6 +28,6 @@ function App() {
             </Router>
         </>
     );
-};
+}
 
 export default App;
