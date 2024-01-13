@@ -1,15 +1,18 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-import Hero from '../components/Hero'
-import AboutUs from '../components/AboutUs'
-import Service from '../components/Service'
-import ContactUs from '../components/ContactUs'
+import React from "react";
+
+import Products from "../components/Products";
+import AboutUs from "../components/AboutUs";
+import ContactUs from "../components/ContactUs";
+
+import Hero from "../components/Hero";
+import Service from "../components/Service";
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <AboutUs />
+      <Products />
       <Service />
       <ContactUs />
     </div>

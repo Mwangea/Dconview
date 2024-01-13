@@ -2,7 +2,7 @@ import React from 'react'
 
 const Service = () => {
   return (
-    <div>Services</div>
+    <div>Service</div>
   )
 }
 
