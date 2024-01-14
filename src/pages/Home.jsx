@@ -6,13 +6,14 @@ import ContactUs from "../components/ContactUs";
 
 import Hero from "../components/Hero";
 import Service from "../components/Service";
+import LogoSlider from "../components/LogoSlider";
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <AboutUs />
-      <Products />
+      <LogoSlider />
       <Service />
       <ContactUs />
     </div>

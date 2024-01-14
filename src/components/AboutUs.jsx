@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LogoSlider from "./LogoSlider";
+
+
 const AboutUs = () => {
   return (
     <div id="about" className="bg-white py-8">
