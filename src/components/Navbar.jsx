@@ -18,7 +18,7 @@ const NavBar = () => {
           <HiLocationMarker className="text-[#FF0000]" />
           <p className="text-white">Off Bamburi, Mombosa road</p>
         </div>
-        <div className="w-[30%] flex gap-2 items-center border-r-[1px] px-2 border-[]#927A7A">
+        <div className="w-[30%] flex gap-2 items-center border-r-[1px] px-2 border-[#927A7A]#927A7A">
           <AiFillMail className="text-[#FF0000]" />
           <p>
            <a className="text-white" href="mailto:info@danconview.com">info@danconview.com</a>

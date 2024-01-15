@@ -9,31 +9,33 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="bg-[#6E9320] py-4">
+    <div className="bg-[#22485e] py-4">
       <div className="w-[80%] mx-auto flex md:flex-row flex-col gap-8 justify-between ">
         <div className="flex flex-col text-white">
-          <p className="text-xl font-semibold">Turning Point</p>
+          <p className="text-xl font-semibold">Dancon View Limited</p>
           <p className="w-[232px]">
-            Nurturing Nature's Bounty, Delivered to You
+          Making the world a better place through constructing elegant hierarchies
           </p>
           <div className="flex gap-2 items-center">
             <a
               href="https://instagram.com/turningpointfarmproduce_ke?igshid=MmU2YjMzNjRlOQ=="
               target="_blank"
               rel="noreferrer"
-              className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center"
+              className="H-[50px] W-[50px] bg-[#FF0000]  flex justify-center items-center"
             >
               <AiOutlineInstagram className="text-white text-3xl p-2" />
             </a>
-            <a className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center">
+            <a className="H-[50px] W-[50px] bg-[#FF0000]  flex justify-center items-center">
               <AiOutlineYoutube className="text-white text-3xl p-2" />
             </a>
             <a
               href="https://www.linkedin.com/company/turning-point-farm-produce/"
               target="_blank"
               rel="noreferrer"
-              className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center"
+              className="H-[50px] W-[50px] bg-[#FF0000]  flex justify-center items-center"
             >
               <AiFillLinkedin className="text-white text-3xl p-2" />
             </a>
@@ -42,16 +44,20 @@ const Footer = () => {
         <div className="flex gap-2 text-white flex-col">
           <p className="text-xl font-semibold">Contact</p>
           <div className="flex gap-2 items-center">
-            <HiLocationMarker className="text-white text-3xl p-2" />
-            <p>Mombasa Road , Nairobi Kenya</p>
+            <HiLocationMarker className="text-[#FF0000] text-3xl p-2" />
+            <p className="text-white">Off Bamburi, Mombosa road</p>
           </div>
           <div className="flex gap-2 items-center">
-            <AiFillMail className="text-white text-3xl p-2" />
-            <p>info@turningpointfarmproduce.com</p>
+            <AiFillMail className="text-[#FF0000] text-3xl p-2" />
+            <p>
+           <a className="text-white" href="mailto:info@danconview.com">info@danconview.com</a>
+           </p>
           </div>
           <div className="flex gap-2 items-center">
-            <IoIosCall className="text-white text-3xl p-2" />
-            <p>+254114285301</p>
+            <IoIosCall className="text-[#FF0000] text-3xl p-2" />
+            <p className="text-white">
+          <a href="tel:+254114285301"> +254114285301</a>
+          </p>
           </div>
         </div>
         <div className="flex gap-2 text-white flex-col">
@@ -59,24 +65,24 @@ const Footer = () => {
 
           <a
             href="#"
-            className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
+            className="hover:text-[#FF0000] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Home
           </a>
           <a
-            href="#about"
-            className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
+            href="About"
+            className="hover:text-[#FF0000] transition-all ease-in-out duration-500 cursor-pointer "
           >
             About Us
           </a>
           <a
-            href="#products"
-            className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
+            href="Services"
+            className="hover:text-[#FF0000] transition-all ease-in-out duration-500 cursor-pointer "
           >
-            Products
+            Services
           </a>
           <a
-            href="#contact"
+            href="contact"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Contact Us
@@ -85,8 +91,8 @@ const Footer = () => {
       </div>
       <p className="w-[100%] bg-white h-[2px] my-2"></p>
       <p className="text-center text-white">
-        Copyright © 2023 TurningPoint, All rights reserved.{" "}
-        <img src="/Logo White.svg" alt="logo" className="w-24" />
+         <span>{`Copyright © ${currentYear} DanconView, All rights reserved.`}</span>
+        <img src="/Danlogo.png" alt="logo" className="w-24" />
       </p>
     </div>
   );

@@ -38,7 +38,7 @@ const ContactUs = () => {
     <div id="contact" className="py-8 w-[100%]">
       <ToastContainer />
 
-      <p className="text-center text-[#076C05] text-4xl font-bold  ">
+      <p className="text-center text-[#22485e] text-4xl font-bold  ">
         Contact Us
       </p>
       <div className="w-[80%]  mx-auto">
@@ -52,7 +52,7 @@ const ContactUs = () => {
           <div className="md:w-[48%] flex flex-col gap-4">
             <form action="https://formspree.io/f/xnqkobod" method="POST">
               <div className="w-[100%] flex flex-col justify-center items-center">
-                <p className="text-[#076C05] text-2xl  my-3 font-bold ">
+                <p className="text-[#22485e] text-2xl  my-3 font-bold ">
                   Get in Touch
                 </p>
                 <div className="w-[100%] flex flex-col  gap-6">
@@ -105,7 +105,7 @@ const ContactUs = () => {
                 <div className="w-[100%] mt-8">
                   <button
                     type="submit"
-                    className="bg-[#1FBF1C] px-6 py-2 text-white hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer"
+                    className="bg-black rounded-md px-6 py-2 text-white hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer"
                   >
                     Send Message
                   </button>
