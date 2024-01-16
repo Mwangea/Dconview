@@ -62,7 +62,7 @@ const NavBar = () => {
           >
           Team
           </Link>
-          <Link to="/Contact"
+          <Link to="contact"
           className="hover:text-[#FF0000] transition-all ease-in-out duration-500 cursor-pointer"
           >
           Contact
@@ -104,7 +104,7 @@ const NavBar = () => {
           >
           Team
           </Link>
-          <Link to="/Contact"
+          <Link to="/#contact"
           className="hover:text-[#FF0000] transition-all ease-in-out duration-500 cursor-pointer"
           >
           Contact

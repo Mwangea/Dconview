@@ -1,35 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 const About = () => {
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabChange = (tabNumber) => {
+    setActiveTab(tabNumber);
+  };
+
   return (
     <div>
       <img src="/shortbg.png" className="w-[100%] h-[240px]" />
-      <div className="w-[80%] py-8 mx-auto">
-        <div className="flex flex-col-reverse md:flex-row justify-between  w-[100%">
+      <div className="container mx-auto">
+        <div className="w-[80%] py-8 mx-auto flex flex-col-reverse md:flex-row justify-between">
           <div className="md:w-[48%] flex flex-col gap-4">
             <p className="text-[#076C05] font-semibold text-2xl">About Us</p>
             <p className="text-[#626262] text-xl">
-              Turning Point Farm Produce is Kenya’s premier grower and exporter
-              of fresh vegetables and fruits. Our journey began with a simple
-              yet powerful mission: to empower our communities in Kenya and
-              provide the world with fresh, high-quality produce. With a deep
-              commitment to both, we've grown into being a household name in the
-              industry. For years, we've cultivated the land with dedication,
-              focusing on haricots, herbs, and chilies. Our farms are
-              strategically spread across diverse regions of Kenya, ensuring a
-              steady supply of premium produce year-round. Our roots are firmly
-              planted in the communities we serve. We invest in both the land
-              and the people, knowing that sustainable farming not only brings
-              prosperity but also strengthens bonds. Turning Point Farm Produce
-              is a catalyst for growth, fostering a sense of community wherever
-              we operate. We leave nothing to chance when it comes to the
-              quality and safety of our produce. Each haricot, every herb, and
-              all our fresh produce undergo meticulous care and adhere to the
-              highest food safety standards. Our farms and all processes are
-              proudly certified by the Horticultural Crops Directorate (HCD),
-              the Kenya Plant Health Inspectorate Services (KEPHIS), and hold
-              global GAP certifications, ensuring that our products meet
-              regulatory standards.
+              DVL is keen to engage with small-holder farmers in the whole
+              agriculture life-cycle as well as the value chain post production.
+              In this regard we would need to promote Good Agricultural
+              Practices (GAP). Also we would need to work with communities to
+              secure their food security and healthy living by ensuring
+              livelihoods. Our intention is to practice climate smart agriculture
+              by promoting the use of geo-ICT in crop-husbandry management. Also
+              ICT will come in handy in crop management as well as distribution.
             </p>
           </div>
           <div className="md:w-[48%]">
@@ -39,8 +32,79 @@ const About = () => {
             />
           </div>
         </div>
+
+ {/* Tab switcher */}
+<div className="mb-4">
+  <div className="container mx-auto px-4 sm:px-6  md:px-8">
+    <div className="flex">
+      <button
+        onClick={() => handleTabChange(1)}
+        className={`flex-1 py-2 rounded-md ${
+          activeTab === 1 ? 'bg-blue-500 text-white' : 'bg-gray-300'
+        } mr-2`}
+      >
+        Tab 1
+      </button>
+      <button
+        onClick={() => handleTabChange(2)}
+        className={`flex-1 py-2 rounded-md ${
+          activeTab === 2 ? 'bg-blue-500 text-white' : 'bg-gray-300'
+        } mx-2`}
+      >
+        Tab 2
+      </button>
+      <button
+        onClick={() => handleTabChange(3)}
+        className={`flex-1 py-2 rounded-md ${
+          activeTab === 3 ? 'bg-blue-500 text-white' : 'bg-gray-300'
+        } ml-2`}
+      >
+        Tab 3
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+        {/* Tab content */}
+        <div>
+          {activeTab === 1 && (
+            <div>
+              <p>This is the content for Tab 1.</p>
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Tab 1 Image"
+                className="mt-4"
+              />
+            </div>
+          )}
+
+          {activeTab === 2 && (
+            <div>
+              <p>This is the content for Tab 2.</p>
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Tab 2 Image"
+                className="mt-4"
+              />
+            </div>
+          )}
+
+          {activeTab === 3 && (
+            <div>
+              <p>This is the content for Tab 3.</p>
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Tab 3 Image"
+                className="mt-4"
+              />
+            </div>
+          )}
+        </div>
       </div>
 
+      
       <div className="w-[80%] py-8 mx-auto">
         <div className="flex flex-col-reverse md:flex-row-reverse justify-between  w-[100%">
           <div className="md:w-[48%] flex flex-col gap-4">
