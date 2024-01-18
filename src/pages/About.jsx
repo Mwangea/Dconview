@@ -39,27 +39,27 @@ const About = () => {
     <div className="flex">
       <button
         onClick={() => handleTabChange(1)}
-        className={`flex-1 py-2 rounded-md ${
+        className={`flex-1 py-4 text-xl rounded-md ${
           activeTab === 1 ? 'bg-blue-500 text-white' : 'bg-gray-300'
         } mr-2`}
       >
-        Tab 1
+        Mapping Out Farmers
       </button>
       <button
         onClick={() => handleTabChange(2)}
-        className={`flex-1 py-2 rounded-md ${
+        className={`flex-1 py-4 text-xl rounded-md ${
           activeTab === 2 ? 'bg-blue-500 text-white' : 'bg-gray-300'
         } mx-2`}
       >
-        Tab 2
+        Training
       </button>
       <button
         onClick={() => handleTabChange(3)}
-        className={`flex-1 py-2 rounded-md ${
+        className={`flex-1 py-4 text-xl rounded-md ${
           activeTab === 3 ? 'bg-blue-500 text-white' : 'bg-gray-300'
         } ml-2`}
       >
-        Tab 3
+        Land Preparation
       </button>
     </div>
   </div>
@@ -75,7 +75,7 @@ const About = () => {
               <img
                 src="https://via.placeholder.com/300"
                 alt="Tab 1 Image"
-                className="mt-4"
+                className="mt-4 flex-1"
               />
             </div>
           )}
@@ -86,7 +86,7 @@ const About = () => {
               <img
                 src="https://via.placeholder.com/300"
                 alt="Tab 2 Image"
-                className="mt-4"
+                className="mt-4 flex-1"
               />
             </div>
           )}
@@ -97,7 +97,7 @@ const About = () => {
               <img
                 src="https://via.placeholder.com/300"
                 alt="Tab 3 Image"
-                className="mt-4"
+                className="mt-4 flex-1"
               />
             </div>
           )}

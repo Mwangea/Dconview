@@ -52,7 +52,7 @@ const NavBar = () => {
           >
           About
           </Link>
-          <Link to="/Service"
+          <Link to="/Services"
           className="hover:text-[#FF0000] transition-all ease-in-out duration-500 cursor-pointer"
           >
           Services

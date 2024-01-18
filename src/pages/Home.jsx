@@ -7,6 +7,7 @@ import ContactUs from "../components/ContactUs";
 import Hero from "../components/Hero";
 import Service from "../components/Service";
 import LogoSlider from "../components/LogoSlider";
+import Services from "./Services";
 
 const Home = () => {
   return (
