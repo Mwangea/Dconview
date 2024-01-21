@@ -1,92 +1,98 @@
 import React from 'react'
 
+
 const Team = () => {
+  const teamMember = [
+    {
+      id: 1,
+      name: 'Patrick Mwadori',
+      role: 'Chief Executive Officer',
+      image: '/',
+      socialLinks: [
+        { name: 'Reddit', url: '#' },
+        { name: 'Facebook', url: '#' },
+        { name: 'Github', url: '#' },
+      ],
+    },
+    {
+      id: 2,
+      name: 'Nuru Tsuma',
+      role: 'Project Manager',
+      image: '/',
+      socialLinks: [
+        { name: 'Reddit', url: '#' },
+        { name: 'Facebook', url: '#' },
+        { name: 'Github', url: '#' },
+      ],
+    }, {
+      id: 3,
+      name: 'Louze Zawadi Alfred',
+      role: 'Project Ass & Office Admin',
+      image: '/',
+      socialLinks: [
+        { name: 'Reddit', url: '#' },
+        { name: 'Facebook', url: '#' },
+        { name: 'Github', url: '#' },
+      ],
+    }, {
+      id: 4,
+      name: 'Dalton Curtis Ouma',
+      role: 'Project Lead - Samburu Kinango',
+      image: '/',
+      socialLinks: [
+        { name: 'Reddit', url: '#' },
+        { name: 'Facebook', url: '#' },
+        { name: 'Github', url: '#' },
+      ],
+    }, {
+      id: 5,
+      name: 'Shukran Thuva',
+      role: 'Project Lead - Malindi/Magarini',
+      image: '/',
+      socialLinks: [
+        { name: 'Reddit', url: '#' },
+        { name: 'Facebook', url: '#' },
+        { name: 'Github', url: '#' },
+      ],
+    }, {
+      id: 6,
+      name: 'Kipngeno Rono',
+      role: 'Project Lead - Kajiado',
+      image: '/',
+      socialLinks: [
+        { name: 'Reddit', url: '#' },
+        { name: 'Facebook', url: '#' },
+        { name: 'Github', url: '#' },
+      ],
+    }, {
+      id: 7,
+      name: 'Omar Kofa Komora',
+      role: 'Finance',
+      image: '/',
+      socialLinks: [
+        { name: 'Reddit', url: '#' },
+        { name: 'Facebook', url: '#' },
+        { name: 'Github', url: '#' },
+      ],
+    }, {
+      id: 8,
+      name: 'Aswani Swaleh',
+      role: 'Project Lead',
+      image: '/',
+      socialLinks: [
+        { name: 'Reddit', url: '#' },
+        { name: 'Facebook', url: '#' },
+        { name: 'Github', url: '#' },
+      ],
+    },
+  ];
   return (
-    <div className="bg-white py-24 sm:py-32">
-  <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-    <div className="max-w-2xl">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-      <p className="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
-    </div>
-    <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-      <li>
-        <div className="flex items-center gap-x-6">
-          <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
+     <section className="bg-white dark:bg-gray-900">
+        <div className="container px-6 py-10 mx-auto">
+          
         </div>
-      </li>
-      <li>
-        <div className="flex items-center gap-x-6">
-          <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div className="flex items-center gap-x-6">
-          <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div className="flex items-center gap-x-6">
-          <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div className="flex items-center gap-x-6">
-          <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div className="flex items-center gap-x-6">
-          <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div className="flex items-center gap-x-6">
-          <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div className="flex items-center gap-x-6">
-          <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
-        </div>
-      </li>
+     </section>
+  );
+};
 
-     
-    </ul>
-  </div>
-</div>
-  )
-}
-
-export default Team
+export default Team;
