@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 
-import NavBar from "./components/NavBar";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ScrollToTop from "./pages/ScrollToTop";
@@ -10,6 +10,7 @@ import ScrollToTop from "./pages/ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./pages/Services";
 import Team from "./pages/Team";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (

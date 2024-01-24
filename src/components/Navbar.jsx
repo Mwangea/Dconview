@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import { AiFillMail } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
