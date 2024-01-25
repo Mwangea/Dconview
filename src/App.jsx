@@ -10,13 +10,13 @@ import ScrollToTop from "./pages/ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./pages/Services";
 import Team from "./pages/Team";
-import NavBar from "./components/NavBar";
+//import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
       <Router>
-        <NavBar />
+        
         <ScrollToTop />
         
         <Routes>
